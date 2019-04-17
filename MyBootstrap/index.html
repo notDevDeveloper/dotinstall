@@ -103,8 +103,15 @@
           <div class="tab-content py-4">
             <div id="ios" class="tab-pane active">
               <p>
-                Hello iOS. Hello iOS. Hello iOS. Hello iOS. Hello iOS. Hello
-                iOS. Hello iOS. Hello iOS. Hello iOS.
+                Hello iOS. Hello iOS.
+                <span
+                  class="font-weight-bold text-info"
+                  data-toggle="tooltip"
+                  title="This is awesome"
+                  data-placement="bottom"
+                  >Hello iOS. Hello iOS.</span
+                >
+                Hello iOS. Hello iOS. Hello iOS. Hello iOS. Hello iOS.
               </p>
             </div>
             <div id="android" class="tab-pane">
@@ -141,5 +148,11 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(function() {
+        "use strict";
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
   </body>
 </html>
